@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .vertical-height {
+            transform: translate(-50px, 50px);
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            document.getElementById("add").addEventListener("click", function() {
+                debugger;
+                addTodoItem();
+            });
+
+            function addTodoItem() {
+                if (document.getElementById("searchAndAdd").value != '' && document.getElementById("searchAndAdd").value != undefined &&
+                    document.getElementById("searchAndAdd").value != null) {
+                    var li = document.createElement("li");
+                    li.className = "list-group-item shadow p-3  bg-white rounded";
+                    var todoDiv = document.createElement("div");
+                    var span = document.createElement("span");
+                    span.className = "text-dark toDOText";
+                    span.textContent = document.getElementById("searchAndAdd").value;
+                    todoDiv.appendChild(span);
+                    var edit = document.createElement("span");
+                    edit.className = "badge badge-danger p-2  float-right  ml-1 btn";
+                    edit.setAttribute("onclick", "editTodoItem(this)");
+                    var editBtn = document.createElement("i");
+                    editBtn.setAttribute("class", "fa fa-pencil");
+                    edit.appendChild(editBtn);
+                    var deleted = document.createElement("span");
+                    deleted.className = "badge badge-danger p-2 float-right btn remove";
+                    deleted.setAttribute("onclick", "removeItem(this)");
+                    var deleteBtn = document.createElement("i");
+                    deleteBtn.setAttribute("class", "fa fa-trash");
+                    deleted.appendChild(deleteBtn);
+                    edit.appendChild(editBtn);
+                    todoDiv.appendChild(edit);
+                    todoDiv.appendChild(deleted);
+                    li.append(todoDiv);
+                    document.querySelector(".list-group").appendChild(li);
+                    document.getElementById("searchAndAdd").value = '';
+                } else {
+                    alert("empty text");
+                }
+            }
+
+
+        }
+
+        function editTodoItem(editItem) {
+            var div = editItem.parentElement;
+            var span = div.querySelector(".toDOText");
+            span.setAttribute("contentEditable", "true");
+        }
+
+
+
+        function removeItem(deleteItem) {
+            debugger;
+            var div = deleteItem.parentElement;
+            div.parentElement.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row vertical-height">
+
+            <div class="col-md-10 offset-md-1">
+                <h1>To Do Items</h1> <br>
+
+                <input type="text" class="form-control float-left w-75" id="searchAndAdd"> <button class="btn btn-danger d-inline-block ml-2" id="add"><span class="text-white"><i class="fa fa-plus"></i></span></button>
+                <ul class="list-group mt-5 w-75">
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
