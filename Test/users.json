@@ -1,0 +1,126 @@
+[{
+        "name": "Jeff Goldblum",
+        "image": "images/ferdinans.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Chris pratt",
+        "image": "images/galaxy.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Chris hemsworth",
+        "image": "images/thor.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Robert Thomas",
+        "image": "images/robert.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Michael B.Jordan",
+        "image": "images/wakanda.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Hugh Jackman",
+        "image": "images/wolverine.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Amithabhachan",
+        "image": "images/amithabh.jpg",
+        "industry": "bollywood"
+    },
+    {
+        "name": "Hrithik Roshan",
+        "image": "images/hrithik.jpg",
+        "industry": "bollywood"
+    },
+    {
+        "name": "Robert Downey",
+        "image": "images/tony.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "James Franco",
+        "image": "images/jamesFranco.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Mahesh Babu",
+        "image": "images/mahesh.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Mohan lal",
+        "image": "images/mohanlal.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Ram charan",
+        "image": "images/ramcharan.jpg",
+        "industry": "tollywood"
+    }, {
+
+        "name": "Rajni Kanth",
+        "image": "images/rajni.jpg",
+        "industry": "tollywood"
+    }, {
+        "name": "Ram Pothineni",
+        "image": "images/ram.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Surya",
+        "image": "images/surya.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Thalapathi vijay",
+        "image": "images/vijay.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "kamal hasaan",
+        "image": "images/kamal.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Allu Arjun",
+        "image": "images/allu.jpg",
+        "industry": "tollywood"
+    },
+    {
+        "name": "Sylvestor Stallone",
+        "image": "images/rambo.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Brad Pitt",
+        "image": "images/brad.jpg",
+        "industry": "hollywood"
+    },
+    {
+        "name": "Akshay kumar",
+        "image": "images/akshay_kumar.jpg",
+        "industry": "bollywood"
+    },
+    {
+        "name": "Ranbir kapoor",
+        "image": "images/ranbeer.jpg",
+        "industry": "bollywood"
+    },
+    {
+        "name": "Salman khan",
+        "image": "images/salman.jpg",
+        "industry": "bollywood"
+    },
+    {
+        "name": "Shahrukh khan",
+        "image": "images/shahrukh.jpg",
+        "industry": "bollywood"
+    }
+
+]
